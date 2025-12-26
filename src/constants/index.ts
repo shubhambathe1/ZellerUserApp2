@@ -1,0 +1,7 @@
+export const USER_ROLES = {
+    ALL: 'ALL',
+    ADMIN: 'ADMIN',
+    MANAGER: 'MANAGER'
+};
+
+export const USER_TABS = [USER_ROLES.ALL, USER_ROLES.ADMIN, USER_ROLES.MANAGER];
