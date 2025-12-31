@@ -55,3 +55,12 @@ export const getAllUsers = async (): Promise<ZellerUserType[]> => {
 
   return users;
 };
+
+export const deleteUserById = async (userId: string) => {
+  const database = await db;
+
+  await database.executeSql(
+    `DELETE FROM users WHERE id = ?;`,
+    [userId]
+  );
+};
